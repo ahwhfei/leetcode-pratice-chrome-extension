@@ -22,10 +22,5 @@
       "all_frames": true
     }
   ],
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "<all_urls>"
-  ],
   "web_accessible_resources": ["hide-element.js"]
 }

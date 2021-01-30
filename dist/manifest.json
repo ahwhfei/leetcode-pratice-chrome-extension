@@ -1,0 +1,31 @@
+{
+  "description": "For hiding LeetCode expected result. 隐藏力扣期望结果，模拟更严格刷题场景。",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+      "19": "images/19.jpg",
+      "38": "images/38.jpg"
+    }
+  },
+  "name": "LeetCode Pratice Tool",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "https://leetcode-cn.com/*",
+        "https://leetcode.com/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": ["hide-element.js"]
+}

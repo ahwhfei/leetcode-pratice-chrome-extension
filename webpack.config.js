@@ -28,8 +28,7 @@ const uglifyJsPlugin = new UglifyJsPlugin({
 
 module.exports = {
     entry: {
-        'tm-agent': path.resolve('src', 'tm-agent.js'),
-        'background': path.resolve('src', 'background.js'),
+        'hide-element': path.resolve('src', 'hide-element.js'),
         'content-script': path.resolve('src', 'content-script.js')
     },
     module: {

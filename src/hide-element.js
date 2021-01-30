@@ -1,6 +1,6 @@
 (function () {
     var str = 
-        'div[class="^finished-container"] > :last-child {' +
+        'div[class^="finished-container"] > :last-child {' +
         '  display: none;' +
         '}';
     var el = document.createElement('style');
